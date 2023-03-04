@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+nav#bar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 72%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: 12px 9px;
+}
+
+
+#logo img{
+    margin: 3px 5px;
+    height: 59px;
+}
+
+nav ul{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.centerdiv{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerdiv a{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 110px;
+    margin: 10px;
+}
+
+.centerdiv a i{
+    transition: all 0.3s linear;
+}
+
+.centerdiv a:hover i{
+    transform:scale(1.4) ;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../maldives.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    display: flex;
+    margin: 80px;
+}
+
+#services .box{
+    border: 1px solid aqua;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 34px;
+    background-color: #c9cbd8;
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../client.jpg);
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img{
+    height: auto;
+    margin-bottom: 90px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+.client-item p{
+    font-family: 'Bree Serif', serif;
+}
+
+#contact{
+position: relative;}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../island.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 94%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 38px;
+    margin-bottom: -19px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5erm;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 30px;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 1px solid white;
+    background-color: aqua;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
